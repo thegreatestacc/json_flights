@@ -29,8 +29,8 @@ public class FlightsController {
     private List<Flight> flights = root.getFlights();
 
     //максимальное и минимальное значения прайса, используются для получения срденего значения прайса
-    int expPrice = getTheMostExpensiveFlightsFromMoscowToKhabarovsk().get().getPrice();
-    int minPrice = getTheCheapestFlightsFromMoscowToKhabarovsk().get().getPrice();
+    private int expPrice = getTheMostExpensiveFlightsFromMoscowToKhabarovsk().get().getPrice();
+    private int minPrice = getTheCheapestFlightsFromMoscowToKhabarovsk().get().getPrice();
 
     /**
      * Считываю json
